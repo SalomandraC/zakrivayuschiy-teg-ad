@@ -87,10 +87,6 @@
   height: auto;
 }
 
-.card__image-1 {
-
-}
-
 .card__image-2 {
   filter: grayscale(100%);
 }
@@ -270,9 +266,10 @@
   transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
 }
 
-.button__save:hover .button__save-icon {
+.button__save:hover
+.button__save-icon {
   color: white; 
-  fill: white;  
+  fill: white;
 }
 
 .dialog-content {
@@ -291,7 +288,7 @@
   width: 39px;
   height: 39px;
   flex-shrink: 0; 
-  display: block;   
+  display: block;
 }
 
 .dialog[open] {
