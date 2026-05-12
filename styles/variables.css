@@ -1,1 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    /* Фоны */
+    --font-basis: 'Inter', sans-serif;
+    --font-press: 'PressStart2P', monospace;
+
+    --font-weight-regular: 400;
+
+
+    /* Цвета */
+    --color-primary: #000;
+    --color-secondary: #6c757d;
+    --color-border: #000;
+    --color-border-basic: transparent;
+    
+    /* Размеры */
+    --size-font-title: clamp(49px, 43.37px + 1.50vw, 65px);
+    --size-font-subtitle: clamp(16px, 14.37px + 0.50vw, 20px);
+
+    --background-gradient: 
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), 
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), 
+        linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+
+    --contour-color: black;
+    --core-color: transparent;
+    --main-body-color: transparent;
+    --sparks-color: transparent;
+}

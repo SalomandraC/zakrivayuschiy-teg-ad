@@ -9,3 +9,110 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+.like-icon {
+  --core-color: transparent;
+  --main-body-color: transparent;
+  --contour-color: #000000;
+}
+
+.core {
+  fill: var(--core-color);
+  transition: fill 0.3s linear;
+}
+
+.main-body {
+  fill: var(--main-body-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.contour {
+  fill: var(--contour-color);
+  transition: fill 0.3s linear;
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sparks {
+  opacity: 0;
+  fill: red;
+}
+
+.heart {
+  transform-origin: center;
+}
+
+.card__icon-button:hover .core {
+  --core-color: #000000;
+  transition: fill 0.3s 0s linear;
+}
+
+.card__icon-button:hover .main-body {
+  --main-body-color: #000000;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button .main-body {
+  transition: fill 0.3s 0s linear;
+}
+
+.card__icon-button .core {
+  transition: fill 0.3s 0.03s linear;
+}
+
+.card__icon-button:active .core {
+  --core-color: red;
+  transition: fill 0.3s 0s linear;
+}
+
+.card__icon-button:active .main-body {
+  --main-body-color: red;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  --core-color: red;
+  transition: fill 0.3s 0s linear;
+}
+
+.like-icon.is-liked .main-body {
+  --main-body-color: red;
+  transition: fill 0.3s 0.01s linear;
+}
+
+.like-icon.is-liked .contour {
+  --contour-color: red;
+  transition: fill 0.3s 0.1s linear;
+}
+
+.like-icon .contour {
+  transition: fill 0.4s 0s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: scale-animation 0.3s ease-in 0.3s 1 forwards;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-animation 0.3s ease-in 0.3s 1 forwards;
+}
