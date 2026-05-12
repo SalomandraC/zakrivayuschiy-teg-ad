@@ -262,7 +262,7 @@
   position: relative;
   z-index: 2;
   color: black;
-  fill: black;  
+  fill: black;
   transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
 }
 
